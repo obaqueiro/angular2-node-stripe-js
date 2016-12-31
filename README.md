@@ -1,13 +1,19 @@
 # NgStripePay
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.21.
+This sample project shows how to use stripe.js as a payment gateway with Angular 2 and Node.js. It allows developers to store away customer credit card detail as an encryted token for later charge without requesting for it again. 
 
 ## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+First create a local MySQL database and run the following table creation query:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+    CREATE TABLE stripe (
+        userId INT PRIMARY KEY AUTO_INCREMENT,
+        amount FLOAT,
+        stripeCustomerId VARCHAR(100),
+        chargeStatus TINYINT(4)
+    );
+
+Then, navigate to `backend` folder and run `node server.js`. Navigate back to the project folder and run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
@@ -20,12 +26,4 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Before running the tests make sure you are serving the app via `ng serve`
