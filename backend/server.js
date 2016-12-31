@@ -14,9 +14,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 connection = mysql.createConnection({
 	host: 'localhost',
-	user: 'root',
-	password: 'Thatsjoe1.',
-	database: 'stripepay'
+	user: '', // your username
+	password: '', // your password
+	database: '' // your database name
 });
 
 connection.connect(function(err) {
