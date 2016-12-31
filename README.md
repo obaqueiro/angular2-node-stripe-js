@@ -13,7 +13,7 @@ First create a local MySQL database and run the following table creation query:
         chargeStatus TINYINT(4)
     );
 
-Then, navigate to `backend` folder and run `node server.js`. Navigate back to the project folder and run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Then, navigate to `backend` folder, edit `server.js` to add your database info and run `node server.js` to get the backend running. Navigate back to the project folder and run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
