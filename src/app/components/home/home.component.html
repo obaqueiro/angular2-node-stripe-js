@@ -1,0 +1,51 @@
+<div class="container admin well" *ngIf="adminDisplay">
+	<h3>ADMIN AREA (This will be a separate application)</h3>
+	<h1 class="text-center">Do you wish to accept payment now?</h1>
+	<div class="buttonArea">
+		<button class="btn btn-primary" (click)="acceptPayment()">YES</button>
+		<button class="btn btn-danger" (click)="declinePayment()">NO</button>
+	</div>
+</div>
+
+<div class="container">
+	<h1 class="text-center">
+		How much do you wish to donate?
+	</h1>
+	<div class="amountArea">
+		<input type="text" [(ngModel)]="amount" class="input form-control amount">
+		<div class="dollar">AUD</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<h5 class="text-left">CARD NUMBER*</h5>
+			<input type="text" [(ngModel)]="cardNumber" class="form-control input">
+		</div>
+		<div class="col-md-6">
+			<h5 class="text-left">EXPIRATION* (MM/YY)</h5>
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<input type="text" [(ngModel)]="expMonth" class="form-control input expiration">
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<input type="text" [(ngModel)]="expYear" class="form-control input expiration">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<h5 class="text-left">CVC*</h5>
+			<input type="text" [(ngModel)]="cvcNumber" class="form-control input">
+		</div>
+		<div class="col-md-6">
+			<h5 class="text-left">BILLING POSTAL CODE</h5>
+			<input type="text" [(ngModel)]="postCode" class="form-control input">
+		</div>
+	</div>
+
+	<div class="row submitArea">
+		<div class="col-md-12">
+			<button class="btn btn-primary btn-block" (click)="submit()">Submit</button>
+		</div>
+	</div>
+</div>

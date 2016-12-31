@@ -1,0 +1,30 @@
+.input {
+	font-size: 22px;
+	padding-left: 10px;
+}
+
+.amount {
+	text-align: center;
+	width: 200px;
+	margin: 30px auto;
+	display: inline-block;
+}
+
+.dollar {
+	display: inline-block;
+	padding: 12px 10px 7px 10px;
+	background-color: #EFEFEF;
+	border-radius: 5px;
+}
+
+.amountArea {
+	text-align: center;
+}
+
+.submitArea {
+	margin-top: 30px;
+}
+
+.buttonArea {
+	text-align: center;
+}
