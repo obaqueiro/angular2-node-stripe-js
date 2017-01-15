@@ -2,6 +2,10 @@
 
 This sample project shows how to use stripe.js as a payment gateway with Angular 2 and Node.js. It allows developers to store away customer credit card detail as an encryted token for later charge without requesting for it again. 
 
+![screen shot 2017-01-15 at 11 13 15 pm](https://cloud.githubusercontent.com/assets/19909685/21962713/6ce2586c-db78-11e6-8bb7-56de61527d32.png)
+
+![screen shot 2017-01-15 at 11 13 36 pm](https://cloud.githubusercontent.com/assets/19909685/21962714/758da16a-db78-11e6-933b-810c2fc58b4e.png)
+
 ## Development server
 
 First create a local MySQL database and run the following table creation query:
